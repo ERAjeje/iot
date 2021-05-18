@@ -5,7 +5,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .main {
@@ -50,6 +49,10 @@
   font-size: 4rem;
 }
 
+.title .span {
+  color: rgb(20, 122, 255);
+}
+
 .title,
 .description {
   text-align: center;
@@ -58,6 +61,38 @@
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.CallToAction {
+  border-right: 3px solid white;
+  margin-top: 0;
+  background-color: rgb(20, 122, 255);
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 700ms steps(40) infinite normal, typing 3s steps(45) 3s infinite normal backwards;
+}
+
+@keyframes blink {
+  form {
+    border-right-color: rgb(20, 122, 255);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 13em;
+  }
 }
 
 .code {
@@ -109,13 +144,26 @@
 }
 
 .logo {
-  height: 1em;
+  color: rgb(20, 122, 255);
   margin-left: 0.5rem;
 }
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
+    font-weight: bolder;
     flex-direction: column;
   }
+}
+
+
+.back {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  margin: 0;
+  margin-top: -2rem;
+  color: rgb(20, 122, 255);
+  font-weight: bolder;
+  cursor: pointer;
 }
