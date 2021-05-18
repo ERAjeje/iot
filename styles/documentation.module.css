@@ -146,7 +146,7 @@
     font-size: x-large;
     white-space: nowrap;
     overflow: hidden;
-    animation: blink 700ms steps(40) infinite normal, typing 3s steps(45) 0.2s running;
+    animation: blink 700ms steps(40) infinite normal, typing 3s steps(45) 0.3s running;
 }
 
 
